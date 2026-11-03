@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio pribadi Farid, mahasiswa Informatika.">
+  <title>Farid | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <a href="#home" class="logo">Farid<span>.</span></a>
+
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Ganti tema">🌙</button>
+      <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Halo, saya</p>
+        <h1>Farid</h1>
+        <h2 class="typing">Saya seorang <span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          Mahasiswa Informatika yang suka membangun solusi digital yang berguna dan rapi.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar" aria-hidden="true">F</div>
+      </div>
+    </section>
+
+    <!-- ===== TENTANG ===== -->
+    <section id="tentang" class="section alt">
+      <div class="container reveal">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-text">
+          Saya mahasiswa Informatika di Indonesia dengan minat pada pengembangan web dan
+          pemanfaatan teknologi untuk menyelesaikan masalah nyata. Saya terbiasa belajar
+          mandiri, mengerjakan proyek kuliah, dan mendokumentasikan hasil kerja dengan baik.
+        </p>
+        <ul class="facts">
+          <li><strong>Pendidikan</strong><span>S1 Informatika</span></li>
+          <li><strong>Lokasi</strong><span>Indonesia</span></li>
+          <li><strong>Fokus</strong><span>Web &amp; Teknologi</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SKILL ===== -->
+    <section id="skill" class="section">
+      <div class="container reveal">
+        <h2 class="section-title">Skill</h2>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-head"><span>HTML</span><span>85%</span></div>
+            <div class="bar"><span data-level="85"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>CSS</span><span>80%</span></div>
+            <div class="bar"><span data-level="80"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>70%</span></div>
+            <div class="bar"><span data-level="70"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Git &amp; GitHub</span><span>75%</span></div>
+            <div class="bar"><span data-level="75"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Python</span><span>70%</span></div>
+            <div class="bar"><span data-level="70"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYEK ===== -->
+    <section id="proyek" class="section alt">
+      <div class="container reveal">
+        <h2 class="section-title">Proyek</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Website Portfolio</h3>
+            <p>Website pribadi responsif dengan mode gelap, dibuat memakai HTML, CSS, dan JavaScript murni.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <a href="https://github.com/faridSrydi/github-pcd" target="_blank" rel="noopener">Lihat kode &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>Proyek Kedua</h3>
+            <p>Ganti teks ini dengan deskripsi singkat proyek: tujuan, masalah yang diselesaikan, dan hasilnya.</p>
+            <div class="tags"><span>Python</span><span>Data</span></div>
+            <a href="#" target="_blank" rel="noopener">Lihat kode &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>Proyek Ketiga</h3>
+            <p>Ganti teks ini dengan deskripsi singkat proyek lain yang ingin ditampilkan.</p>
+            <div class="tags"><span>Web</span><span>API</span></div>
+            <a href="#" target="_blank" rel="noopener">Lihat kode &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section id="kontak" class="section">
+      <div class="container reveal">
+        <h2 class="section-title">Kontak</h2>
+        <p class="section-text">Tertarik berkolaborasi atau ingin bertanya? Kirim pesan lewat formulir di bawah.</p>
+
+        <form id="contact-form" class="form">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">Kirim via Email</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Farid. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    <p>
+      <a href="https://github.com/faridSrydi" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
